@@ -1,0 +1,116 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    margin: 200px 0;
+}
+
+.features {
+    background-color: #e7e7e7;
+    padding: 100px 0;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.features header {
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.features header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #444;
+    padding-bottom: 20px;
+}
+
+.features header h2 {
+    color: #777
+}
+.features .row > * {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+.features .row > img {
+    width: 25%;
+    margin: 0 4%;
+    animation: up-down 5s infinite;
+}
+
+.features .row > ul:first-child {
+    text-align: right;
+}
+
+.features .row h3 {
+    font-size: 19px;
+    padding: 15px 0;
+    font-weight: 700;
+    color:#444
+}
+
+.features .row p {
+    padding: 20px 0 20px 20px;
+    color:#777;
+    transition: 0.5s;
+    border: 2px solid #888;
+    border-right: none;
+
+    
+    
+}
+.features li:hover p {
+    border-color: #005bea;
+}
+.features li::after{
+    content: "";
+    display: block;
+    background-color: #e7e7e7;
+    transform: translateY(-5px);
+    width: 100%;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+    height: 20px;
+}
+.features li:hover::after{
+    width: 40%;
+    margin-left: 60%;
+}
+
+/* features li .icon +- svg tex-align/line-height - center svg inside bloc /icon  */
+.features li .icon {
+    transform: translateY(-135px) translateX(40px);
+    background-color: white;
+    width: 40px;
+    height: 30px;
+    border-radius: 44px;
+    float: right;
+    text-align: center;
+    line-height: 50%;
+}
+
+.features li .icon:hover {
+    background-color: #005bea;
+    color:white;
+}
+
+.features li .icon:hover img {
+    color: white;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(-50px);
+    }
+}
